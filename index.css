@@ -1,0 +1,31 @@
+@import url("https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css");
+@import url('http://fonts.font.im/css?family=Droid+Serif|Open+Sans:400,300italic');
+@import "./iconfont.css";
+
+.title {
+    background-image: url('image/bgi.png');
+    color: rgb(211, 197, 197);
+    height: 150px;
+
+}
+
+.title-content {
+    margin-top: 15px;
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.linkstyle {
+    text-decoration: underline;
+    color: wheat;
+    display: inline;
+}
+.distance{
+    margin-left: 5px;
+    margin-right: 5px;
+}
