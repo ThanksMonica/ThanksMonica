@@ -12,12 +12,12 @@
 .title-content {
     margin-top: 15px;
     font-family: 'Droid Serif', serif;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .content {
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .linkstyle {
