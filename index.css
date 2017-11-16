@@ -4,10 +4,9 @@
 
 .title {
     background-image: url('image/bgi.png');
-    color: rgb(211, 197, 197);
-    height: 150px;
-   
-
+    background-size: 1400px 180px;
+    background-attachment: fixed;
+    color:rgb(211, 197, 197);
 }
 
 .title-content {
@@ -29,4 +28,10 @@
 .distance{
     margin-left: 5px;
     margin-right: 5px;
+}
+
+}
+.button-margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
