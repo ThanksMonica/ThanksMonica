@@ -4,7 +4,7 @@
 
 .title {
     background-image: url('image/bgi.png');
-    background-size: 1400px 180px;
+    background-size: 1450px 180px;
     background-attachment: fixed;
     color:rgb(211, 197, 197);
 }
@@ -30,8 +30,8 @@
     margin-right: 5px;
 }
 
-}
+
 .button-margin{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 21px;
+    margin-bottom: 20px;
 }
