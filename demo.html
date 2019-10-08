@@ -24,8 +24,10 @@
 						<h2>demo</h2>
 					</div>
 					<div class="col-sm-6">
-						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>新增</span></a>
-						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>删除</span></a>						
+						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+							<i class="material-icons">&#xE147;</i> <span>ADD</span></a>
+						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
+							<i class="material-icons">&#xE15C;</i> <span>DELETE</span></a>						
 					</div>
                 </div>
             </div>
@@ -38,10 +40,10 @@
 								<label for="selectAll"></label>
 							</span>
 						</th>
-                        <th>Name</th>
-                        <th>Email</th>
-						<th>Address</th>
-                        <th>Phone</th>
+                        <th>Domain Name</th>
+                        <th>Status 1</th>
+						<th>Status 2</th>
+                        <th>IP</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -53,10 +55,10 @@
 								<label for="checkbox1"></label>
 							</span>
 						</td>
-                        <td>Thomas Hardy</td>
-                        <td>thomashardy@mail.com</td>
-						<td>89 Chiaroscuro Rd, Portland, USA</td>
-                        <td>(171) 555-2222</td>
+                        <td>ns1</td>
+                        <td>IN</td>
+						<td>A</td>
+                        <td>202.115.80.130</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -69,10 +71,10 @@
 								<label for="checkbox2"></label>
 							</span>
 						</td>
-                        <td>Dominique Perrier</td>
-                        <td>dominiqueperrier@mail.com</td>
-						<td>Obere Str. 57, Berlin, Germany</td>
-                        <td>(313) 555-5735</td>
+                        <td>ns2</td>
+                        <td>IN</td>
+						<td>A</td>
+                        <td>202.115.80.131</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -85,10 +87,10 @@
 								<label for="checkbox3"></label>
 							</span>
 						</td>
-                        <td>Maria Anders</td>
-                        <td>mariaanders@mail.com</td>
-						<td>25, rue Lauriston, Paris, France</td>
-                        <td>(503) 555-9931</td>
+                        <td>inn-ns1</td>
+                        <td>IN</td>
+						<td>A</td>
+                        <td>202.115.80.132</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -101,10 +103,10 @@
 								<label for="checkbox4"></label>
 							</span>
 						</td>
-                        <td>Fran Wilson</td>
-                        <td>franwilson@mail.com</td>
-						<td>C/ Araquil, 67, Madrid, Spain</td>
-                        <td>(204) 619-5731</td>
+                        <td>inn-ns2</td>
+                        <td>IN</td>
+						<td>A</td>
+                        <td>202.115.80.133</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -117,10 +119,10 @@
 								<label for="checkbox5"></label>
 							</span>
 						</td>
-                        <td>Martin Blank</td>
-                        <td>martinblank@mail.com</td>
-						<td>Via Monte Bianco 34, Turin, Italy</td>
-                        <td>(480) 631-2097</td>
+                        <td>liuxy</td>
+                        <td>IN</td>
+						<td>A</td>
+                        <td>202.115.80.102</td>
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -153,19 +155,19 @@
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Name</label>
+							<label>Domain Name</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Email</label>
-							<input type="email" class="form-control" required>
+							<label>Status 1</label>
+							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Address</label>
+							<label>Status 2</label>
 							<textarea class="form-control" required></textarea>
 						</div>
 						<div class="form-group">
-							<label>Phone</label>
+							<label>IP</label>
 							<input type="text" class="form-control" required>
 						</div>					
 					</div>
@@ -188,19 +190,19 @@
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Name</label>
+							<label>Domain Name</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Email</label>
-							<input type="email" class="form-control" required>
+							<label>Status 1</label>
+							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Address</label>
+							<label>Status 2</label>
 							<textarea class="form-control" required></textarea>
 						</div>
 						<div class="form-group">
-							<label>Phone</label>
+							<label>IP</label>
 							<input type="text" class="form-control" required>
 						</div>					
 					</div>
