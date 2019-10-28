@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>demo</title>
+<title>home</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,15 +23,19 @@
                     <div class="col-sm-6">
 						<h2>demo</h2>
 					</div>
+					<!--go to Add_page -->
 					<div class="col-sm-6">
-						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
-							<i class="material-icons">&#xE147;</i> <span>ADD</span></a>
+						<a href="add.html" class="btn btn-success">
+							<i class="material-icons">&#xE147;</i> 
+							<span>ADD</span>
+						</a>
 						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
-							<i class="material-icons">&#xE15C;</i> <span>DELETE</span></a>						
+							<i class="material-icons">&#xE15C;</i> 
+							<span>DELETE</span></a>						
 					</div>
                 </div>
             </div>
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover"> <data-url></data-url>
                 <thead>
                     <tr>
 						<th>
@@ -40,6 +44,7 @@
 								<label for="selectAll"></label>
 							</span>
 						</th>
+						<!-- table head -->
                         <th>Domain Name</th>
                         <th>Status 1</th>
 						<th>Status 2</th>
@@ -55,79 +60,20 @@
 								<label for="checkbox1"></label>
 							</span>
 						</td>
+						<!-- contents of table -->
                         <td>ns1</td>
                         <td>IN</td>
 						<td>A</td>
                         <td>202.115.80.130</td>
                         <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							<!-- edit_button,go to edit_page -->
+                            <a href="edit.html" class="edit">
+								<i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+							<!-- delete contents in this row-->
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+								<i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                         </td>
                     </tr>
-                    <tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox2" name="options[]" value="1">
-								<label for="checkbox2"></label>
-							</span>
-						</td>
-                        <td>ns2</td>
-                        <td>IN</td>
-						<td>A</td>
-                        <td>202.115.80.131</td>
-                        <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        </td>
-                    </tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox3" name="options[]" value="1">
-								<label for="checkbox3"></label>
-							</span>
-						</td>
-                        <td>inn-ns1</td>
-                        <td>IN</td>
-						<td>A</td>
-                        <td>202.115.80.132</td>
-                        <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox4" name="options[]" value="1">
-								<label for="checkbox4"></label>
-							</span>
-						</td>
-                        <td>inn-ns2</td>
-                        <td>IN</td>
-						<td>A</td>
-                        <td>202.115.80.133</td>
-                        <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        </td>
-                    </tr>					
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox5" name="options[]" value="1">
-								<label for="checkbox5"></label>
-							</span>
-						</td>
-                        <td>liuxy</td>
-                        <td>IN</td>
-						<td>A</td>
-                        <td>202.115.80.102</td>
-                        <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        </td>
-                    </tr> 
                 </tbody>
             </table>
 			<div class="clearfix">
@@ -144,8 +90,8 @@
             </div>
         </div>
     </div>
-	<!-- Edit Modal HTML -->
-	<div id="addEmployeeModal" class="modal fade">
+	<!-- Add Modal HTML -->
+	<!-- <div id="addEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form>
@@ -178,9 +124,9 @@
 				</form>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Edit Modal HTML -->
-	<div id="editEmployeeModal" class="modal fade">
+	<!-- <div id="editEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<form>
@@ -213,7 +159,7 @@
 				</form>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Delete Modal HTML -->
 	<div id="deleteEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
